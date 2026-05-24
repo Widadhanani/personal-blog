@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">MyBlog</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button id="darkModeBtn">🌙</button>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>Contact Me</h1>
+    <p>Feel free to connect with me.</p>
+</section>
+
+<section class="section">
+    <div class="contact-card">
+        <h2>Get In Touch</h2>
+        <p><strong>Email:</strong> yourname@email.com</p>
+        <p><strong>GitHub:</strong> github.com/yourusername</p>
+        <p><strong>LinkedIn:</strong> linkedin.com/in/yourname</p>
+    </div>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="button" class="btn" onclick="showMessage()">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 My Personal Blog. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
