@@ -42,7 +42,7 @@ header {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #00adb5;
+    color: #74ebd5;
 }
 
 #darkModeBtn {
@@ -59,7 +59,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(135deg, #dff6ff, #ffffff);
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
     padding: 30px;
 }
 
@@ -87,12 +87,13 @@ header {
 
 .btn:hover {
     background: #00adb5;
+    transform: scale(1.05);
 }
 
 .page-header {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(135deg, #dff6ff, #ffffff);
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
 }
 
 .page-header h1 {
@@ -118,6 +119,12 @@ header {
     border-radius: 15px;
     margin-bottom: 25px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover,
+.contact-card:hover {
+    transform: translateY(-8px);
 }
 
 .skills {
