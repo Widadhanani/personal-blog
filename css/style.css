@@ -16,6 +16,7 @@ body{
 }
 
 /* HEADER */
+
 header{
     padding:20px 8%;
     position:fixed;
@@ -64,6 +65,7 @@ header{
 }
 
 /* HERO */
+
 .hero{
     min-height:100vh;
     display:flex;
@@ -72,9 +74,9 @@ header{
     text-align:center;
     padding:120px 20px 50px;
     background:
-        radial-gradient(circle at top left, rgba(56,189,248,0.35), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(30,64,175,0.55), transparent 40%),
-        #0f172a;
+    radial-gradient(circle at top left, rgba(56,189,248,0.35), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(30,64,175,0.55), transparent 40%),
+    #0f172a;
 }
 
 .hero-content{
@@ -112,6 +114,8 @@ header{
     gap:20px;
 }
 
+/* BUTTON */
+
 .btn{
     background:#38bdf8;
     color:white;
@@ -135,13 +139,14 @@ header{
 }
 
 /* PAGE HEADER */
+
 .page-header{
     padding:150px 8% 80px;
     text-align:center;
     background:
-        radial-gradient(circle at top right, rgba(56,189,248,0.3), transparent 35%),
-        radial-gradient(circle at bottom left, rgba(30,64,175,0.5), transparent 40%),
-        #0f172a;
+    radial-gradient(circle at top right, rgba(56,189,248,0.3), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(30,64,175,0.5), transparent 40%),
+    #0f172a;
 }
 
 .page-header h1{
@@ -155,6 +160,7 @@ header{
 }
 
 /* SECTION */
+
 .section{
     padding:100px 8%;
 }
@@ -166,6 +172,7 @@ header{
 }
 
 /* CARDS */
+
 .cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -193,30 +200,8 @@ header{
     color:#38bdf8;
 }
 
-/* SKILLS */
-.skills-box{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-    justify-content:center;
-}
-
-.skills-box span{
-    background:rgba(56,189,248,0.15);
-    color:#38bdf8;
-    padding:12px 20px;
-    border-radius:30px;
-    border:1px solid rgba(56,189,248,0.4);
-    transition:0.3s;
-}
-
-.skills-box span:hover{
-    background:#38bdf8;
-    color:white;
-    transform:translateY(-5px);
-}
-
 /* ABOUT PAGE */
+
 .about-hero{
     min-height:430px;
     padding:150px 8% 80px;
@@ -225,9 +210,9 @@ header{
     justify-content:center;
     text-align:center;
     background:
-        radial-gradient(circle at top left, rgba(56,189,248,0.32), transparent 32%),
-        radial-gradient(circle at bottom right, rgba(99,102,241,0.28), transparent 35%),
-        linear-gradient(180deg,#020617,#0f172a);
+    radial-gradient(circle at top left, rgba(56,189,248,0.32), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(99,102,241,0.28), transparent 35%),
+    linear-gradient(180deg,#020617,#0f172a);
 }
 
 .about-hero-content{
@@ -262,7 +247,42 @@ header{
     margin-bottom:20px;
 }
 
+.about-quick-info{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:30px;
+}
+
+.about-quick-info span{
+    background:rgba(56,189,248,0.15);
+    color:#dbeafe;
+    border:1px solid rgba(56,189,248,0.35);
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.about-quick-info span:hover{
+    background:#38bdf8;
+    color:white;
+    transform:translateY(-5px);
+}
+
+.main-about strong{
+    color:#38bdf8;
+}
+
+.highlight-section{
+    background:
+    radial-gradient(circle at center, rgba(56,189,248,0.15), transparent 35%),
+    #020617;
+}
+
 /* TIMELINE */
+
 .timeline{
     position:relative;
     max-width:900px;
@@ -309,19 +329,20 @@ header{
 }
 
 /* PROJECT PAGE */
+
 .project-hero{
     min-height:360px;
     padding:150px 8% 70px;
     text-align:center;
     background:
-        radial-gradient(circle at left, rgba(56,189,248,0.28), transparent 28%),
-        radial-gradient(circle at right, rgba(37,99,235,0.25), transparent 30%),
-        linear-gradient(180deg,#020617,#0f172a);
+    radial-gradient(circle at left, rgba(56,189,248,0.28), transparent 28%),
+    radial-gradient(circle at right, rgba(37,99,235,0.25), transparent 30%),
+    linear-gradient(180deg,#020617,#0f172a);
 }
 
 .project-grid{
     display:grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(3,1fr);
     gap:28px;
 }
 
@@ -381,19 +402,25 @@ header{
 }
 
 /* CONTACT PAGE */
+
 .contact-hero{
     min-height:430px;
     padding:150px 8% 80px;
     text-align:center;
     background:
-        radial-gradient(circle at top left, rgba(56,189,248,0.35), transparent 32%),
-        radial-gradient(circle at bottom right, rgba(99,102,241,0.28), transparent 35%),
-        linear-gradient(180deg,#020617,#0f172a);
+    radial-gradient(circle at top left, rgba(56,189,248,0.35), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(99,102,241,0.28), transparent 35%),
+    linear-gradient(180deg,#020617,#0f172a);
 }
 
 .contact-hero h1{
     font-size:70px;
     margin-bottom:20px;
+}
+
+.contact-hero p{
+    color:#cbd5e1;
+    font-size:18px;
 }
 
 .contact-section{
@@ -414,11 +441,14 @@ header{
     padding:30px;
     text-align:center;
     transition:0.35s;
+    text-decoration:none;
+    color:white;
 }
 
 .contact-info-card:hover{
     transform:translateY(-10px);
     border-color:#38bdf8;
+    box-shadow:0 0 30px rgba(56,189,248,0.2);
 }
 
 .contact-icon{
@@ -472,7 +502,32 @@ header{
     resize:none;
 }
 
+/* SKILLS */
+
+.skills-box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.skills-box span{
+    background:rgba(56,189,248,0.15);
+    color:#38bdf8;
+    padding:12px 20px;
+    border-radius:30px;
+    border:1px solid rgba(56,189,248,0.4);
+    transition:0.3s;
+}
+
+.skills-box span:hover{
+    background:#38bdf8;
+    color:white;
+    transform:translateY(-5px);
+}
+
 /* FOOTER */
+
 footer{
     text-align:center;
     padding:30px;
@@ -480,6 +535,7 @@ footer{
 }
 
 /* ANIMATION */
+
 @keyframes fadeUp{
     from{
         opacity:0;
@@ -492,9 +548,11 @@ footer{
 }
 
 /* RESPONSIVE */
+
 @media(max-width:1000px){
+
     .project-grid{
-        grid-template-columns:repeat(2, 1fr);
+        grid-template-columns:repeat(2,1fr);
     }
 }
 
@@ -518,6 +576,14 @@ footer{
         font-size:42px;
     }
 
+    .hero h2{
+        font-size:24px;
+    }
+
+    .hero-desc{
+        font-size:16px;
+    }
+
     .hero-buttons{
         flex-direction:column;
     }
@@ -533,37 +599,8 @@ footer{
     .section{
         padding:70px 6%;
     }
-    .about-quick-info{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:15px;
-    margin-top:30px;
-}
 
-.about-quick-info span{
-    background:rgba(56,189,248,0.15);
-    color:#dbeafe;
-    border:1px solid rgba(56,189,248,0.35);
-    padding:10px 18px;
-    border-radius:30px;
-    font-size:14px;
-    transition:0.3s;
-}
-
-.about-quick-info span:hover{
-    background:#38bdf8;
-    color:white;
-    transform:translateY(-5px);
-}
-
-.main-about strong{
-    color:#38bdf8;
-}
-
-.highlight-section{
-    background:
-        radial-gradient(circle at center, rgba(56,189,248,0.15), transparent 35%),
-        #020617;
-}
+    .page-header h1{
+        font-size:40px;
+    }
 }
