@@ -97,6 +97,16 @@ header{
     animation:fadeUp 1s ease;
 }
 
+.hero-profile-img{
+    width:170px;
+    height:170px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    margin-bottom:25px;
+    box-shadow:0 0 35px rgba(56,189,248,0.45);
+}
+
 .intro{
     color:#38bdf8;
     letter-spacing:3px;
@@ -290,6 +300,61 @@ header{
 .cta-box p{
     color:#cbd5e1;
     margin-bottom:28px;
+}
+
+/* APPRECIATION SECTION */
+.appreciation-section{
+    background:
+        radial-gradient(circle at center, rgba(56,189,248,0.12), transparent 35%),
+        #020617;
+}
+
+.appreciation-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:35px;
+}
+
+.person-card{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(56,189,248,0.25);
+    border-radius:28px;
+    padding:40px;
+    text-align:center;
+    transition:0.35s;
+    box-shadow:0 20px 50px rgba(0,0,0,0.2);
+}
+
+.person-card:hover{
+    transform:translateY(-10px);
+    border-color:#38bdf8;
+    box-shadow:0 0 35px rgba(56,189,248,0.18);
+}
+
+.person-card img{
+    width:170px;
+    height:170px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    margin-bottom:20px;
+    box-shadow:0 0 30px rgba(56,189,248,0.3);
+}
+
+.person-card h3{
+    font-size:28px;
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.role{
+    color:#cbd5e1;
+    margin-bottom:18px;
+    font-weight:bold;
+}
+
+.person-card p{
+    color:#dbeafe;
 }
 
 /* CARDS */
@@ -749,69 +814,4 @@ footer{
     .intro-text h2{
         font-size:30px;
     }
-    /* PROFILE IMAGE IN HERO */
-.hero-profile-img{
-    width:170px;
-    height:170px;
-    object-fit:cover;
-    border-radius:50%;
-    border:5px solid #38bdf8;
-    margin-bottom:25px;
-    box-shadow:0 0 35px rgba(56,189,248,0.45);
-}
-
-/* APPRECIATION SECTION */
-.appreciation-section{
-    background:
-    radial-gradient(circle at center, rgba(56,189,248,0.12), transparent 35%),
-    #020617;
-}
-
-.appreciation-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:35px;
-}
-
-.person-card{
-    background:rgba(255,255,255,0.06);
-    border:1px solid rgba(56,189,248,0.25);
-    border-radius:28px;
-    padding:40px;
-    text-align:center;
-    transition:0.35s;
-    box-shadow:0 20px 50px rgba(0,0,0,0.2);
-}
-
-.person-card:hover{
-    transform:translateY(-10px);
-    border-color:#38bdf8;
-    box-shadow:0 0 35px rgba(56,189,248,0.18);
-}
-
-.person-card img{
-    width:170px;
-    height:170px;
-    object-fit:cover;
-    border-radius:50%;
-    border:5px solid #38bdf8;
-    margin-bottom:20px;
-    box-shadow:0 0 30px rgba(56,189,248,0.3);
-}
-
-.person-card h3{
-    font-size:28px;
-    margin-bottom:10px;
-    color:#38bdf8;
-}
-
-.role{
-    color:#cbd5e1;
-    margin-bottom:18px;
-    font-weight:bold;
-}
-
-.person-card p{
-    color:#dbeafe;
-}
 }
