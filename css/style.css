@@ -16,7 +16,6 @@ body{
 }
 
 /* HEADER */
-
 header{
     padding:20px 8%;
     position:fixed;
@@ -64,23 +63,37 @@ header{
     cursor:pointer;
 }
 
-/* HERO */
-
-.hero{
+/* HOME PAGE PREMIUM */
+.home-hero{
     min-height:100vh;
+    position:relative;
+    overflow:hidden;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:120px 20px 50px;
+    padding:150px 8% 80px;
     background:
-    radial-gradient(circle at top left, rgba(56,189,248,0.35), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(30,64,175,0.55), transparent 40%),
-    #0f172a;
+        radial-gradient(circle at top left, rgba(56,189,248,0.35), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(99,102,241,0.3), transparent 35%),
+        linear-gradient(180deg,#020617,#0f172a);
 }
 
-.hero-content{
-    max-width:850px;
+.hero-glow{
+    position:absolute;
+    width:360px;
+    height:360px;
+    border-radius:50%;
+    background:rgba(56,189,248,0.18);
+    filter:blur(45px);
+    top:120px;
+    right:10%;
+}
+
+.home-hero-content{
+    max-width:950px;
+    position:relative;
+    z-index:2;
     animation:fadeUp 1s ease;
 }
 
@@ -91,15 +104,16 @@ header{
     font-weight:bold;
 }
 
-.hero h1{
-    font-size:80px;
-    margin-bottom:10px;
+.home-hero h1{
+    font-size:86px;
+    line-height:1.05;
+    margin-bottom:12px;
 }
 
-.hero h2{
-    font-size:35px;
+.home-hero h2{
+    font-size:34px;
     color:#cbd5e1;
-    margin-bottom:25px;
+    margin-bottom:22px;
 }
 
 .hero-desc{
@@ -114,8 +128,38 @@ header{
     gap:20px;
 }
 
-/* BUTTON */
+.hero-stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    margin-top:45px;
+}
 
+.hero-stats div{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(56,189,248,0.25);
+    border-radius:20px;
+    padding:25px;
+    transition:0.3s;
+}
+
+.hero-stats div:hover{
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+    box-shadow:0 0 30px rgba(56,189,248,0.18);
+}
+
+.hero-stats h3{
+    color:#38bdf8;
+    font-size:34px;
+}
+
+.hero-stats p{
+    color:#cbd5e1;
+    font-size:14px;
+}
+
+/* BUTTON */
 .btn{
     background:#38bdf8;
     color:white;
@@ -138,29 +182,7 @@ header{
     border:2px solid #38bdf8;
 }
 
-/* PAGE HEADER */
-
-.page-header{
-    padding:150px 8% 80px;
-    text-align:center;
-    background:
-    radial-gradient(circle at top right, rgba(56,189,248,0.3), transparent 35%),
-    radial-gradient(circle at bottom left, rgba(30,64,175,0.5), transparent 40%),
-    #0f172a;
-}
-
-.page-header h1{
-    font-size:55px;
-    margin-bottom:15px;
-}
-
-.page-header p{
-    color:#cbd5e1;
-    font-size:18px;
-}
-
-/* SECTION */
-
+/* GENERAL SECTION */
 .section{
     padding:100px 8%;
 }
@@ -171,8 +193,106 @@ header{
     margin-bottom:50px;
 }
 
-/* CARDS */
+/* HOME INTRO */
+.intro-section{
+    background:
+        radial-gradient(circle at center, rgba(56,189,248,0.12), transparent 35%),
+        #020617;
+}
 
+.intro-wrapper{
+    display:grid;
+    grid-template-columns:1.2fr 0.8fr;
+    gap:35px;
+    align-items:center;
+}
+
+.intro-text{
+    background:linear-gradient(135deg, rgba(56,189,248,0.13), rgba(255,255,255,0.04));
+    border:1px solid rgba(56,189,248,0.28);
+    border-radius:28px;
+    padding:45px;
+}
+
+.intro-text h2{
+    text-align:left;
+    margin-bottom:20px;
+    font-size:38px;
+}
+
+.intro-text p{
+    color:#cbd5e1;
+    margin-bottom:18px;
+}
+
+.intro-panel{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:28px;
+    padding:35px;
+}
+
+.intro-panel h3{
+    color:#38bdf8;
+    margin-bottom:25px;
+    font-size:26px;
+}
+
+.mini-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.mini-list div{
+    display:flex;
+    gap:15px;
+    align-items:flex-start;
+    background:rgba(255,255,255,0.05);
+    padding:18px;
+    border-radius:18px;
+}
+
+.mini-list strong{
+    color:#38bdf8;
+    font-size:20px;
+}
+
+.mini-list span{
+    color:#cbd5e1;
+}
+
+.featured-section{
+    background:
+        radial-gradient(circle at center, rgba(99,102,241,0.14), transparent 35%),
+        #0f172a;
+}
+
+.cta-section{
+    background:#020617;
+}
+
+.cta-box{
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    background:linear-gradient(135deg, rgba(56,189,248,0.18), rgba(99,102,241,0.12));
+    border:1px solid rgba(56,189,248,0.35);
+    border-radius:30px;
+    padding:50px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.25);
+}
+
+.cta-box h2{
+    margin-bottom:18px;
+}
+
+.cta-box p{
+    color:#cbd5e1;
+    margin-bottom:28px;
+}
+
+/* CARDS */
 .cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -200,8 +320,27 @@ header{
     color:#38bdf8;
 }
 
-/* ABOUT PAGE */
+/* PAGE HEADER */
+.page-header{
+    padding:150px 8% 80px;
+    text-align:center;
+    background:
+        radial-gradient(circle at top right, rgba(56,189,248,0.3), transparent 35%),
+        radial-gradient(circle at bottom left, rgba(30,64,175,0.5), transparent 40%),
+        #0f172a;
+}
 
+.page-header h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.page-header p{
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+/* ABOUT PAGE */
 .about-hero{
     min-height:430px;
     padding:150px 8% 80px;
@@ -210,9 +349,9 @@ header{
     justify-content:center;
     text-align:center;
     background:
-    radial-gradient(circle at top left, rgba(56,189,248,0.32), transparent 32%),
-    radial-gradient(circle at bottom right, rgba(99,102,241,0.28), transparent 35%),
-    linear-gradient(180deg,#020617,#0f172a);
+        radial-gradient(circle at top left, rgba(56,189,248,0.32), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(99,102,241,0.28), transparent 35%),
+        linear-gradient(180deg,#020617,#0f172a);
 }
 
 .about-hero-content{
@@ -277,12 +416,11 @@ header{
 
 .highlight-section{
     background:
-    radial-gradient(circle at center, rgba(56,189,248,0.15), transparent 35%),
-    #020617;
+        radial-gradient(circle at center, rgba(56,189,248,0.15), transparent 35%),
+        #020617;
 }
 
 /* TIMELINE */
-
 .timeline{
     position:relative;
     max-width:900px;
@@ -329,15 +467,14 @@ header{
 }
 
 /* PROJECT PAGE */
-
 .project-hero{
     min-height:360px;
     padding:150px 8% 70px;
     text-align:center;
     background:
-    radial-gradient(circle at left, rgba(56,189,248,0.28), transparent 28%),
-    radial-gradient(circle at right, rgba(37,99,235,0.25), transparent 30%),
-    linear-gradient(180deg,#020617,#0f172a);
+        radial-gradient(circle at left, rgba(56,189,248,0.28), transparent 28%),
+        radial-gradient(circle at right, rgba(37,99,235,0.25), transparent 30%),
+        linear-gradient(180deg,#020617,#0f172a);
 }
 
 .project-grid{
@@ -402,15 +539,14 @@ header{
 }
 
 /* CONTACT PAGE */
-
 .contact-hero{
     min-height:430px;
     padding:150px 8% 80px;
     text-align:center;
     background:
-    radial-gradient(circle at top left, rgba(56,189,248,0.35), transparent 32%),
-    radial-gradient(circle at bottom right, rgba(99,102,241,0.28), transparent 35%),
-    linear-gradient(180deg,#020617,#0f172a);
+        radial-gradient(circle at top left, rgba(56,189,248,0.35), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(99,102,241,0.28), transparent 35%),
+        linear-gradient(180deg,#020617,#0f172a);
 }
 
 .contact-hero h1{
@@ -503,7 +639,6 @@ header{
 }
 
 /* SKILLS */
-
 .skills-box{
     display:flex;
     flex-wrap:wrap;
@@ -527,7 +662,6 @@ header{
 }
 
 /* FOOTER */
-
 footer{
     text-align:center;
     padding:30px;
@@ -535,7 +669,6 @@ footer{
 }
 
 /* ANIMATION */
-
 @keyframes fadeUp{
     from{
         opacity:0;
@@ -548,15 +681,20 @@ footer{
 }
 
 /* RESPONSIVE */
-
 @media(max-width:1000px){
-
     .project-grid{
         grid-template-columns:repeat(2,1fr);
+    }
+
+    .intro-wrapper{
+        grid-template-columns:1fr;
     }
 }
 
 @media(max-width:768px){
+    header{
+        padding:18px 5%;
+    }
 
     .navbar{
         flex-direction:column;
@@ -569,14 +707,14 @@ footer{
         gap:16px;
     }
 
-    .hero h1,
+    .home-hero h1,
     .about-hero h1,
     .project-hero h1,
     .contact-hero h1{
         font-size:42px;
     }
 
-    .hero h2{
+    .home-hero h2{
         font-size:24px;
     }
 
@@ -586,6 +724,10 @@ footer{
 
     .hero-buttons{
         flex-direction:column;
+    }
+
+    .hero-stats{
+        grid-template-columns:1fr;
     }
 
     .project-grid{
@@ -602,5 +744,9 @@ footer{
 
     .page-header h1{
         font-size:40px;
+    }
+
+    .intro-text h2{
+        font-size:30px;
     }
 }
